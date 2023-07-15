@@ -21,12 +21,14 @@ namespace ParallelLoop
             {
                 Console.WriteLine("i = " + i + "\tprocId = " + Thread.GetCurrentProcessorId().ToString());
                 Thread.Sleep(1000);
+                //Console.WriteLine("Wait 1 second");
             });
 
             for (int i = 0; i < ints.Count(); i++)
             {
                 Console.WriteLine("i = " + i);
                 Thread.Sleep(1000);
+                Console.WriteLine("Wait 1 second");
             }
         }
     }
